@@ -1,24 +1,72 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div id="nav"></div>
-        </header>
-        <section>
-            <div id="containers">
-                <div id="images"></div>
-                <p id="text">Container 1</p>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsywna Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Moja Strona</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </nav>
+
+    <div class="main-content">
+        <aside class="category-sidebar">
+            <h2>Kategorie</h2>
+            <ul>
+                <li><a href="#">Krajobrazy</a></li>
+                <li><a href="#">Portrety</a></li>
+                <li><a href="#">Architektura</a></li>
+                <li><a href="#">Przyroda</a></li>
+                <li><a href="#">Miasta</a></li>
+            </ul>
+        </aside>
+
+        <section class="gallery">
+            <div class="gallery-item">
+                <h3>Tytuł Zdjęcia 1</h3>
+                <img src="https://via.placeholder.com/300" alt="Zdjęcie 1">
+                <p>Opis zdjęcia 1</p>
             </div>
-            <div id="containers">
-                <div id="images"></div>
-                <p id="text">Container 2</p>
+            <div class="gallery-item">
+                <h3>Tytuł Zdjęcia 2</h3>
+                <img src="https://via.placeholder.com/300" alt="Zdjęcie 2">
+                <p>Opis zdjęcia 2</p>
             </div>
-            <div id="containers">
-                <div id="images"></div>
-                <p id="text">Container 3</p>
+            <div class="gallery-item">
+                <h3>Tytuł Zdjęcia 3</h3>
+                <img src="https://via.placeholder.com/300" alt="Zdjęcie 3">
+                <p>Opis zdjęcia 3</p>
+            </div>
+            <div class="gallery-item">
+                <h3>Tytuł Zdjęcia 4</h3>
+                <img src="https://via.placeholder.com/300" alt="Zdjęcie 4">
+                <p>Opis zdjęcia 4</p>
             </div>
         </section>
-    </body>
+    </div>
+
+    <footer class="footer">
+        <p>By Bartosz Duczmal 1G gr.1</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.getElementById('menuIcon').addEventListener('click', toggleMenu);
+    </script>
+
+</body>
 </html>
