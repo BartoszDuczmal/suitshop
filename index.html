@@ -5,68 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsywna Strona</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">Moja Strona</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-        <div class="menu-icon" id="menuIcon">&#9776;</div>
-    </nav>
-
-    <div class="main-content">
-        <aside class="category-sidebar">
-            <h2>Kategorie</h2>
-            <ul>
-                <li><a href="#">Krajobrazy</a></li>
-                <li><a href="#">Portrety</a></li>
-                <li><a href="#">Architektura</a></li>
-                <li><a href="#">Przyroda</a></li>
-                <li><a href="#">Miasta</a></li>
-            </ul>
-        </aside>
-
-        <section class="gallery">
-            <div class="gallery-item">
-                <h3>Tytuł Zdjęcia 1</h3>
-                <img src="https://via.placeholder.com/300" alt="Zdjęcie 1">
-                <p>Opis zdjęcia 1</p>
-            </div>
-            <div class="gallery-item">
-                <h3>Tytuł Zdjęcia 2</h3>
-                <img src="https://via.placeholder.com/300" alt="Zdjęcie 2">
-                <p>Opis zdjęcia 2</p>
-            </div>
-            <div class="gallery-item">
-                <h3>Tytuł Zdjęcia 3</h3>
-                <img src="https://via.placeholder.com/300" alt="Zdjęcie 3">
-                <p>Opis zdjęcia 3</p>
-            </div>
-            <div class="gallery-item">
-                <h3>Tytuł Zdjęcia 4</h3>
-                <img src="https://via.placeholder.com/300" alt="Zdjęcie 4">
-                <p>Opis zdjęcia 4</p>
-            </div>
-        </section>
+    <header>
+        <img src="./images/logo.webp" id="imageLogo">
+        <div id="categories">Tops</div>
+        <div id="categories">Sweaters</div>
+        <div id="categories">Jeans</div>
+        <div id="categories">Coats & Jackets</div>
+        <div id="categories">Activewear</div>
+        <div id="categories">Shorts</div>
+        <div id="categories">Pants</div>
+        <span class="material-symbols-outlined" id="menu">menu</span>
+    </header>
+    <div id="titleImage"><img src="./images/image.jpg"></div>
+    <div id="gridOne">
+        <div id="gridCategories"><img src="./images/handbags.webp" alt="Handbags"><div id="titleImg">Handbags</div></div>
+        <div id="gridCategories"><img src="./images/watches.webp" alt="Watches"><div id="titleImg">Watches</div></div>
+        <div id="gridCategories"><img src="./images/shoes.webp" alt="Shoes"><div id="titleImg">Shoes</div></div>
     </div>
-
-    <footer class="footer">
-        <p>By Bartosz Duczmal 1G gr.1</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
-        }
-
-        document.getElementById('menuIcon').addEventListener('click', toggleMenu);
-    </script>
-
+    <div id="gridTwo">
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+        <div id="product">
+            <img src="https://via.placeholder.com/250x390">
+            <div id="productTitle">Product 1</div>
+            <div id="productPrice"><s>$29.99</s>&nbsp;$19.99</div>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    <footer>By Bartosz Duczmal 2G gr.1</footer>
 </body>
 </html>
